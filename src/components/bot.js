@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ style }) => (
+const Bot = ({ style }) => (
   <svg
     width="39px"
     height="39px"
@@ -52,3 +52,5 @@ export default ({ style }) => (
     </g>
   </svg>
 )
+
+export default Bot

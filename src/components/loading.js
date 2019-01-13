@@ -2,10 +2,10 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 const Bounce = keyframes`
-  0%, 80%, 100% { 
+  0%, 80%, 100% {
     background: #0b9af5;
     transform: scale(0);
-  } 40% { 
+  } 40% {
     background: #EAF6FF;
     transform: scale(1.0);
   }
@@ -34,10 +34,12 @@ const LoadingSpinner = styled.div`
     animation-delay: -0.16s;
   }
 `
-export default () => (
+const Loading = () => (
   <LoadingSpinner>
-    <div class="bounce1" />
-    <div class="bounce2" />
-    <div class="bounce3" />
+    <div className="bounce1" />
+    <div className="bounce2" />
+    <div className="bounce3" />
   </LoadingSpinner>
 )
+
+export default Loading

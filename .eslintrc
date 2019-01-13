@@ -1,0 +1,14 @@
+{
+  "extends": ["standard", "plugin:react/recommended"],
+  "rules": {
+    "react/prop-types": 0,
+    "comma-dangle": 0,
+    "space-before-function-paren": 0
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}

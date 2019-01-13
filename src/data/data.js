@@ -6,7 +6,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: 'https://expressjs.com/',
-    id: '3943506'
+    id: '3943506',
   },
   {
     activity: 'Learn to greet someone in a new language',
@@ -14,7 +14,7 @@ export default [
     type: 'education',
     participants: 1,
     price: 0.1,
-    id: '4704256'
+    id: '4704256',
   },
   {
     activity: 'Learn how to play a new sport',
@@ -23,7 +23,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '5808228'
+    id: '5808228',
   },
   {
     activity: "Text a friend you haven't talked to in a long time",
@@ -32,7 +32,7 @@ export default [
     participants: 2,
     price: 0.05,
     link: '',
-    id: '6081071'
+    id: '6081071',
   },
   {
     activity: 'Learn a new programming language',
@@ -41,7 +41,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '5881028'
+    id: '5881028',
   },
   {
     activity: 'Learn how to fold a paper crane',
@@ -49,7 +49,7 @@ export default [
     type: 'education',
     participants: 1,
     price: 0.1,
-    id: '3136036'
+    id: '3136036',
   },
   {
     activity: 'Find a DIY to do',
@@ -58,7 +58,7 @@ export default [
     participants: 1,
     price: 0.4,
     link: '',
-    id: '4981819'
+    id: '4981819',
   },
   {
     activity: 'Learn about the Golden Ratio',
@@ -67,7 +67,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: 'https://en.wikipedia.org/wiki/Golden_ratio',
-    id: '2095681'
+    id: '2095681',
   },
   {
     activity: 'Volunteer at a local animal shelter',
@@ -76,7 +76,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '1382389'
+    id: '1382389',
   },
   {
     activity: 'Play a game of Monopoly',
@@ -85,7 +85,7 @@ export default [
     participants: 4,
     price: 0.2,
     link: '',
-    id: '1408058'
+    id: '1408058',
   },
   {
     activity: 'Bake pastries for you and your neighbor',
@@ -94,7 +94,7 @@ export default [
     participants: 1,
     price: 0.4,
     link: '',
-    id: '8125168'
+    id: '8125168',
   },
   {
     activity: "Bake something you've never tried before",
@@ -103,7 +103,7 @@ export default [
     participants: 1,
     price: 0.4,
     link: '',
-    id: '5665663'
+    id: '5665663',
   },
   {
     activity: 'Take your dog on a walk',
@@ -112,7 +112,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '9318514'
+    id: '9318514',
   },
   {
     activity: 'Meditate for five minutes',
@@ -121,7 +121,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '1516976 '
+    id: '1516976 ',
   },
   {
     activity: "Start a book you've never gotten around to reading",
@@ -130,7 +130,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '7114122'
+    id: '7114122',
   },
   {
     activity: 'Take a caffeine nap',
@@ -139,7 +139,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '5092652'
+    id: '5092652',
   },
   {
     activity: 'Take a bubble bath',
@@ -148,7 +148,7 @@ export default [
     participants: 1,
     price: 0.15,
     link: '',
-    id: '2581372'
+    id: '2581372',
   },
   {
     activity: 'Go to a nail salon',
@@ -157,7 +157,7 @@ export default [
     participants: 1,
     price: 0.4,
     link: '',
-    id: '7526324'
+    id: '7526324',
   },
   {
     activity: 'Listen to your favorite album',
@@ -166,7 +166,7 @@ export default [
     participants: 1,
     price: 0.08,
     link: '',
-    id: '3136729'
+    id: '3136729',
   },
   {
     activity: 'Learn to play a new instrument',
@@ -175,7 +175,7 @@ export default [
     participants: 1,
     price: 0.55,
     link: '',
-    id: '3192099'
+    id: '3192099',
   },
   {
     activity: 'Teach your dog a new trick',
@@ -184,7 +184,7 @@ export default [
     participants: 1,
     price: 0.05,
     link: '',
-    id: '1668223'
+    id: '1668223',
   },
   {
     activity: 'Make a to-do list for your week',
@@ -193,7 +193,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '1668223'
+    id: '1668223',
   },
   {
     activity: 'Go swimming with a friend',
@@ -202,7 +202,7 @@ export default [
     participants: 2,
     price: 0.1,
     link: '',
-    id: '1505028'
+    id: '1505028',
   },
   {
     activity: 'Go on a long drive with no music',
@@ -211,7 +211,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '4290333'
+    id: '4290333',
   },
   {
     activity: "Watch a movie you'd never usually watch",
@@ -220,7 +220,7 @@ export default [
     participants: 1,
     price: 0.15,
     link: '',
-    id: '9212950'
+    id: '9212950',
   },
   {
     activity: 'Go see a movie in theaters with a few friends',
@@ -229,7 +229,7 @@ export default [
     participants: 4,
     price: 0.2,
     link: '',
-    id: '5262759'
+    id: '5262759',
   },
   {
     activity: 'Draw and color a Mandala',
@@ -238,7 +238,7 @@ export default [
     participants: 1,
     price: 0.05,
     link: '',
-    id: '4614092'
+    id: '4614092',
   },
   {
     activity: 'Rearrange and organize your room',
@@ -247,7 +247,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '6197243'
+    id: '6197243',
   },
   {
     activity: 'Pot some plants and put them around your house',
@@ -256,7 +256,7 @@ export default [
     participants: 1,
     price: 0.4,
     link: '',
-    id: '6613330'
+    id: '6613330',
   },
   {
     activity: "Plan a vacation you've always wanted to take",
@@ -265,7 +265,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '7265395'
+    id: '7265395',
   },
   {
     activity: 'Take your cat on a walk',
@@ -274,7 +274,7 @@ export default [
     participants: 1,
     price: 0.02,
     link: '',
-    id: '5940465'
+    id: '5940465',
   },
   {
     activity: 'Have a football scrimmage with some friends',
@@ -283,7 +283,7 @@ export default [
     participants: 8,
     price: 0,
     link: '',
-    id: '1638604'
+    id: '1638604',
   },
   {
     activity: 'Fill out a basketball bracket',
@@ -292,7 +292,7 @@ export default [
     participants: 1,
     price: 0,
     link: '',
-    id: '7806284'
+    id: '7806284',
   },
   {
     activity: 'Play a game of tennis with a friend',
@@ -301,7 +301,7 @@ export default [
     participants: 2,
     price: 0.1,
     link: '',
-    id: '1093640'
+    id: '1093640',
   },
   {
     activity: 'Catch up with a friend over a lunch date',
@@ -310,7 +310,7 @@ export default [
     participants: 2,
     price: 0.2,
     link: '',
-    id: '5590133'
+    id: '5590133',
   },
   {
     activity: 'Learn how to iceskate or rollerskate',
@@ -319,7 +319,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '5947957'
+    id: '5947957',
   },
   {
     activity: 'Go to a concert with local artists with some friends',
@@ -328,7 +328,7 @@ export default [
     participants: 3,
     price: 0.4,
     link: '',
-    id: '2211716'
+    id: '2211716',
   },
   {
     activity: 'Explore the nightlife of your city',
@@ -337,7 +337,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '2237769'
+    id: '2237769',
   },
   {
     activity: "Fix something that's broken in your house",
@@ -346,7 +346,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '6925988'
+    id: '6925988',
   },
   {
     activity: 'Wash your car',
@@ -355,7 +355,7 @@ export default [
     participants: 1,
     price: 0.05,
     link: '',
-    id: '1017771'
+    id: '1017771',
   },
   {
     activity: 'Find a charity and donate to it',
@@ -364,7 +364,7 @@ export default [
     participants: 1,
     price: 0.4,
     link: '',
-    id: '1488053'
+    id: '1488053',
   },
   {
     activity: 'Hold a yard sale',
@@ -373,7 +373,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '1432113'
+    id: '1432113',
   },
   {
     activity: 'Donate blood at a local blood center',
@@ -382,7 +382,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: 'https://www.redcross.org/give-blood',
-    id: '6509779'
+    id: '6509779',
   },
   {
     activity: 'Volunteer and help out at a senior center',
@@ -391,7 +391,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '3920096'
+    id: '3920096',
   },
   {
     activity: 'Shop at support your local farmers market',
@@ -400,7 +400,7 @@ export default [
     participants: 1,
     price: 0.2,
     link: '',
-    id: '8979931'
+    id: '8979931',
   },
   {
     activity: 'Learn a new recipe',
@@ -409,7 +409,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '6553978'
+    id: '6553978',
   },
   {
     activity: 'Create a cookbook with your favorite recipes',
@@ -418,7 +418,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '1947449'
+    id: '1947449',
   },
   {
     activity: 'Create a compost pile',
@@ -427,7 +427,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '8631548'
+    id: '8631548',
   },
   {
     activity: 'Volunteer at your local food shelter',
@@ -436,7 +436,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '2055368'
+    id: '2055368',
   },
   {
     activity: 'Create or update your resume',
@@ -445,7 +445,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '9364041'
+    id: '9364041',
   },
   {
     activity: 'Paint the first thing you see',
@@ -454,7 +454,7 @@ export default [
     participants: 1,
     price: 0.25,
     link: '',
-    id: '1162360'
+    id: '1162360',
   },
   {
     activity: "Start a blog for something you're passionate about",
@@ -463,7 +463,7 @@ export default [
     participants: 1,
     price: 0.05,
     link: '',
-    id: '8364626'
+    id: '8364626',
   },
   {
     activity: 'Start a garden',
@@ -472,7 +472,7 @@ export default [
     participants: 1,
     price: 0.3,
     link: '',
-    id: '1934228'
+    id: '1934228',
   },
   {
     activity: "Clean out your closet and donate the clothes you've outgrown",
@@ -481,7 +481,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '9026787'
+    id: '9026787',
   },
   {
     activity: 'Catch up on world news',
@@ -490,7 +490,7 @@ export default [
     participants: 1,
     price: 0.05,
     link: '',
-    id: '6596257'
+    id: '6596257',
   },
   {
     activity: 'Create a personal website',
@@ -499,7 +499,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '3141417'
+    id: '3141417',
   },
   {
     activity: 'Listen to a new podcast',
@@ -508,7 +508,7 @@ export default [
     participants: 1,
     price: 0.05,
     link: '',
-    id: '4124860'
+    id: '4124860',
   },
   {
     activity: 'Have a paper airplane contest with some friends',
@@ -517,7 +517,7 @@ export default [
     participants: 4,
     price: 0.02,
     link: '',
-    id: '8557562'
+    id: '8557562',
   },
   {
     activity: 'Learn calligraphy',
@@ -526,7 +526,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '4565537'
+    id: '4565537',
   },
   {
     activity: 'Start a collection',
@@ -535,7 +535,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '1718657'
+    id: '1718657',
   },
   {
     activity: 'Go to a local thrift shop',
@@ -544,7 +544,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '8503795'
+    id: '8503795',
   },
   {
     activity: 'Make a couch fort',
@@ -553,7 +553,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '2352669'
+    id: '2352669',
   },
   {
     activity: 'Pick up litter around your favorite park',
@@ -562,7 +562,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '4894697'
+    id: '4894697',
   },
   {
     activity: 'Buy a new house decoration',
@@ -571,7 +571,7 @@ export default [
     participants: 1,
     price: 0.4,
     link: '',
-    id: '3456114'
+    id: '3456114',
   },
   {
     activity: 'Write a thank you letter to an influential person in your life',
@@ -580,7 +580,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '4101229'
+    id: '4101229',
   },
   {
     activity: 'Clean out your car',
@@ -589,7 +589,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '2896176'
+    id: '2896176',
   },
   {
     activity: 'Write a short story',
@@ -598,7 +598,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '6301585'
+    id: '6301585',
   },
   {
     activity: 'Do something nice for someone you care about',
@@ -607,7 +607,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '8321894'
+    id: '8321894',
   },
   {
     activity: 'Think of a new business idea',
@@ -616,7 +616,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '6808057'
+    id: '6808057',
   },
   {
     activity: 'Clean out your garage',
@@ -625,7 +625,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '7023703'
+    id: '7023703',
   },
   {
     activity: 'Learn to sew on a button',
@@ -634,7 +634,7 @@ export default [
     participants: 1,
     price: 0.05,
     link: '',
-    id: '8731971'
+    id: '8731971',
   },
   {
     activity: 'Learn how to french braid hair',
@@ -643,7 +643,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '8926492'
+    id: '8926492',
   },
   {
     activity: 'Learn how to whistle with your fingers',
@@ -652,7 +652,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '2790297'
+    id: '2790297',
   },
   {
     activity: 'Learn to write with your nondominant hand',
@@ -661,7 +661,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '1645485'
+    id: '1645485',
   },
   {
     activity: 'Make bread from scratch',
@@ -670,7 +670,7 @@ export default [
     participants: 1,
     price: 0.2,
     link: '',
-    id: '4809815'
+    id: '4809815',
   },
   {
     activity: 'Make a budget',
@@ -679,7 +679,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '4379552'
+    id: '4379552',
   },
   {
     activity: 'Learn how to write in shorthand',
@@ -688,7 +688,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '6778219'
+    id: '6778219',
   },
   {
     activity: 'Make a simple musical instrument',
@@ -697,7 +697,7 @@ export default [
     participants: 1,
     price: 0.4,
     link: '',
-    id: '7091374'
+    id: '7091374',
   },
   {
     activity: 'Go to the gym',
@@ -706,7 +706,7 @@ export default [
     participants: 1,
     price: 0.2,
     link: '',
-    id: '4387026'
+    id: '4387026',
   },
   {
     activity: "Try a food you don't like",
@@ -715,7 +715,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '6693574'
+    id: '6693574',
   },
   {
     activity: 'Conquer one of your fears',
@@ -724,7 +724,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '8344539'
+    id: '8344539',
   },
   {
     activity: 'Go to a concert with some friends',
@@ -733,7 +733,7 @@ export default [
     participants: 4,
     price: 0.6,
     link: '',
-    id: '4558850'
+    id: '4558850',
   },
   {
     activity: 'Go to the library and find an interesting book',
@@ -742,7 +742,7 @@ export default [
     participants: 1,
     price: 0.05,
     link: '',
-    id: '8253550'
+    id: '8253550',
   },
   {
     activity: 'Go to an escape room',
@@ -751,7 +751,7 @@ export default [
     participants: 4,
     price: 0.5,
     link: '',
-    id: '5585829'
+    id: '5585829',
   },
   {
     activity: 'Go to a karaoke bar with some friends',
@@ -760,7 +760,7 @@ export default [
     participants: 4,
     price: 0.5,
     link: '',
-    id: '9072906'
+    id: '9072906',
   },
   {
     activity: 'Repaint a room in your house',
@@ -769,7 +769,7 @@ export default [
     participants: 1,
     price: 0.3,
     link: '',
-    id: '4877086'
+    id: '4877086',
   },
   {
     activity: 'Pull a harmless prank on one of your friends',
@@ -778,7 +778,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '1288934'
+    id: '1288934',
   },
   {
     activity: 'Take a spontaneous road trip with some friends',
@@ -787,7 +787,7 @@ export default [
     participants: 4,
     price: 0.2,
     link: '',
-    id: '2085321'
+    id: '2085321',
   },
   {
     activity: 'Go stargazing',
@@ -796,7 +796,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '8832605'
+    id: '8832605',
   },
   {
     activity: 'Invite some friends over for a game night',
@@ -805,7 +805,7 @@ export default [
     participants: 4,
     price: 0.0,
     link: '',
-    id: '6613428'
+    id: '6613428',
   },
   {
     activity: 'Make homemade ice cream',
@@ -814,7 +814,7 @@ export default [
     participants: 1,
     price: 0.2,
     link: '',
-    id: '3818400'
+    id: '3818400',
   },
   {
     activity: 'Start a daily journal',
@@ -823,7 +823,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '8779876'
+    id: '8779876',
   },
   {
     activity: 'Go to a music festival with some friends',
@@ -832,7 +832,7 @@ export default [
     participants: 4,
     price: 0.4,
     link: '',
-    id: '6482790'
+    id: '6482790',
   },
   {
     activity: 'Make a bucket list',
@@ -841,7 +841,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '2735499'
+    id: '2735499',
   },
   {
     activity: 'Binge watch a trending series',
@@ -850,7 +850,7 @@ export default [
     participants: 1,
     price: 0.2,
     link: '',
-    id: '5881647'
+    id: '5881647',
   },
   {
     activity: 'Learn how to make a website',
@@ -859,7 +859,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '9924423'
+    id: '9924423',
   },
   {
     activity: 'Create and follow a savings plan',
@@ -868,7 +868,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '9366464'
+    id: '9366464',
   },
   {
     activity: 'Watch a classic movie',
@@ -877,7 +877,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '8081693'
+    id: '8081693',
   },
   {
     activity: 'Plan a trip to another country',
@@ -886,7 +886,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '5554727'
+    id: '5554727',
   },
   {
     activity: 'Learn how the internet works',
@@ -895,7 +895,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '9414706'
+    id: '9414706',
   },
   {
     activity: 'Take a hike at a local park',
@@ -904,7 +904,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '8724324'
+    id: '8724324',
   },
   {
     activity: 'Make tie dye shirts',
@@ -913,7 +913,7 @@ export default [
     participants: 1,
     price: 0.2,
     link: '',
-    id: '8092359'
+    id: '8092359',
   },
   {
     activity: 'Make a scrapbook with pictures of your favorite memories',
@@ -922,7 +922,7 @@ export default [
     participants: 1,
     price: 0.1,
     link: '',
-    id: '5554174'
+    id: '5554174',
   },
   {
     activity: 'Have a picnic with some friends',
@@ -931,7 +931,7 @@ export default [
     participants: 3,
     price: 0.1,
     link: '',
-    id: '6813070'
+    id: '6813070',
   },
   {
     activity: 'Have a bonfire with your close friends',
@@ -940,7 +940,7 @@ export default [
     participants: 4,
     price: 0.1,
     link: '',
-    id: '8442249'
+    id: '8442249',
   },
   {
     activity: 'Memorize the fifty states and their capitals',
@@ -949,7 +949,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '4179309'
+    id: '4179309',
   },
   {
     activity: 'Take a class at your local community center that interests you',
@@ -958,7 +958,7 @@ export default [
     participants: 2,
     price: 0.0,
     link: '',
-    id: '8750692'
+    id: '8750692',
   },
   {
     activity: "Resolve a problem you've been putting off",
@@ -967,7 +967,7 @@ export default [
     participants: 1,
     price: 0.0,
     link: '',
-    id: '9999999'
+    id: '9999999',
   },
   {
     activity: 'Make a new friend',
@@ -976,6 +976,6 @@ export default [
     participants: 2,
     price: 0.0,
     link: '',
-    id: '1000000'
-  }
+    id: '1000000',
+  },
 ]

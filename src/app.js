@@ -1,6 +1,5 @@
 import React, { Fragment, useContext, useState } from 'react'
 import { BoredContext } from './BoredContext'
-import Screen from './components/Screen'
 import Chat from './components/Chat'
 import { Button } from './components/Button'
 import Reward from 'react-rewards'
@@ -10,7 +9,7 @@ import {
   Welcome,
   ChatContainer,
   Mobile,
-  MobileBg
+  MobileBg,
 } from './components/Elements'
 import mobileBg from './images/mobile-bg.svg'
 
@@ -22,8 +21,8 @@ export default () => {
   const [messages, setMessages] = useState([
     {
       user: 'I am bored. Give me shit to do',
-      bot: getRandom().activity
-    }
+      bot: getRandom().activity,
+    },
   ])
 
   const no = message => {
@@ -34,8 +33,8 @@ export default () => {
         ...messages,
         {
           user: 'No 👎',
-          bot: message
-        }
+          bot: message,
+        },
       ])
     }, 400)
   }
@@ -46,8 +45,8 @@ export default () => {
       ...messages,
       {
         user: 'Yes 👍',
-        bot: 'Go do the Thing 🎉'
-      }
+        bot: 'Go do the Thing 🎉',
+      },
     ])
     setDone(true)
   }
