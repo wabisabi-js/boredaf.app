@@ -10,6 +10,7 @@ export const Card = styled.div`
   background: #fbfbfd;
   box-shadow: 0 32px 44px 0 rgba(64, 68, 90, 0.2);
   border-radius: 30px;
+  justify-content: space-between;
 
   @media only screen and (max-width: 900px) {
     flex-direction: column;
@@ -35,14 +36,14 @@ export const Welcome = styled.div`
 `
 
 export const Mobile = styled.div`
-  display: flex;
   max-width: 375px;
-  min-height: 500px
+  height: 500px;
+  overflow: auto;
   padding: 50px 20px 20px;
-  flex-direction: column;
-  background: #fff
+  background: #fff;
   border-radius: 50px;
   z-index: 3;
+  position: relative;
   box-shadow: 0 32px 44px 0 rgba(64, 68, 90, 0.2);
 `
 
@@ -51,6 +52,7 @@ export const MobileBg = styled.img`
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 0;
 `
 
 export const Bubble = styled.div`
@@ -78,11 +80,8 @@ export const BotSpeaking = styled.div`
 
 export const ChatContainer = styled.div`
   position: relative;
-  flex: 1;
   margin-left: 50px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  z-index: 1;
 
   @media only screen and (max-width: 900px) {
     margin-left: 0;
