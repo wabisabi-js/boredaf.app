@@ -64,7 +64,7 @@ export default () => {
           </p>
         </Welcome>
         <ChatContainer>
-          <MobileBg src={mobileBg} />
+          <MobileBg alt="background" src={mobileBg} />
           <Mobile>
             <Chat messages={messages}>
               <Reward
