@@ -50,8 +50,10 @@ export default () => {
         bot: 'Go do the Thing 🎉'
       }
     ])
-    mobilePhone.current.scrollTop = mobilePhone.current.scrollHeight
     setDone(true)
+    setTimeout(() => {
+      mobilePhone.current.scrollTop = mobilePhone.current.scrollHeight
+    }, 0)
   }
 
   const confetti = () => reward.rewardMe()
