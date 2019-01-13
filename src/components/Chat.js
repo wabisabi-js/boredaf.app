@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
-import BotSVG from './bot'
+import BotSVG from './Bot'
 import { format } from 'date-fns'
 
 const Bubble = styled.div`

@@ -5,6 +5,7 @@
     "comma-dangle": 0,
     "space-before-function-paren": 0
   },
+  "plugins": ["jsx-a11y"],
   "settings": {
     "react": {
       "pragma": "React",
