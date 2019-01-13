@@ -28,7 +28,7 @@
     "test": "npm run format && npm run lint",
     "eject": "react-scripts eject",
     "format": "prettier --single-quote --trailing-comma es5 --write 'src/**/*.js'",
-    "lint": "eslint . --cache --fix"
+    "lint": "eslint 'src/**/*.js' --cache --fix"
   },
   "browserslist": [
     ">0.2%",
