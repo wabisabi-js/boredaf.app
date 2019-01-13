@@ -23,9 +23,12 @@ export const Card = styled.div`
   }
 `
 
-export const Welcome = styled.div`
+export const WelcomeCard = styled.div`
   max-width: 300px;
   margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
   @media only screen and (max-width: 900px) {
     order: 2;
@@ -45,14 +48,29 @@ export const Mobile = styled.div`
   z-index: 3;
   position: relative;
   box-shadow: 0 32px 44px 0 rgba(64, 68, 90, 0.2);
+
+  @media only screen and (max-width: 900px) {
+    margin: auto;
+  }
 `
 
 export const MobileBg = styled.img`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 150%;
   z-index: 0;
+  transform: translateX(-25%);
+
+  @media only screen and (max-width: 900px) {
+    transform: translateX(0%);
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    transform: translateX(-10%);
+    width: 120%;
+  }
 `
 
 export const Bubble = styled.div`

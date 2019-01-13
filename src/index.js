@@ -4,6 +4,7 @@ import { BoredState } from './BoredContext'
 import { createGlobalStyle } from 'styled-components'
 import normalize from 'normalize.css'
 import Main from './app'
+import * as serviceWorker from './serviceWorker'
 
 const Global = createGlobalStyle`
   ${normalize}
@@ -27,7 +28,7 @@ const Global = createGlobalStyle`
       margin: 0;
 
     }
-    p {
+    p, a {
       color: #889097;
       line-height: 1.5;
       margin: 0;
@@ -56,3 +57,4 @@ function App() {
 
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
+serviceWorker.register()

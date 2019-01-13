@@ -6,6 +6,7 @@
     "space-before-function-paren": 0
   },
   "plugins": ["jsx-a11y"],
+  "globals": { "fetch": true },
   "settings": {
     "react": {
       "pragma": "React",

@@ -4,13 +4,8 @@ import Chat from './components/Chat'
 import { Button } from './components/Button'
 import Reward from 'react-rewards'
 import Loading from './components/Loading'
-import {
-  Card,
-  Welcome,
-  ChatContainer,
-  Mobile,
-  MobileBg
-} from './components/Elements'
+import Welcome from './components/Welcome'
+import { Card, ChatContainer, Mobile, MobileBg } from './components/Elements'
 import mobileBg from './images/mobile-bg.svg'
 
 export default () => {
@@ -19,12 +14,13 @@ export default () => {
   const [done, setDone] = useState(false)
   const [loading, setLoading] = useState(false)
   const { getRandom } = useContext(BoredContext)
-  const [messages, setMessages] = useState([
+  const defaultMessages = [
     {
       user: 'I am bored. Give me shit to do',
       bot: getRandom().activity
     }
-  ])
+  ]
+  const [messages, setMessages] = useState(defaultMessages)
 
   const no = message => {
     setLoading(true)
@@ -58,16 +54,15 @@ export default () => {
 
   const confetti = () => reward.rewardMe()
 
+  const restart = () => {
+    setMessages(defaultMessages)
+    setDone(false)
+  }
+
   return (
     <Fragment>
       <Card>
-        <Welcome>
-          <h2>Hello stranger!</h2>
-          <h1>So you think you bored!</h1>
-          <p>
-            Our chatbot can tell you a cool thing to do. Just give it a try!
-          </p>
-        </Welcome>
+        <Welcome />
         <ChatContainer>
           <MobileBg alt="background" src={mobileBg} />
           <Mobile ref={mobilePhone}>
@@ -88,12 +83,14 @@ export default () => {
                   )}
                 </Button>
               </Reward>
-              {!done && (
+              {!done ? (
                 <Button onClick={() => no(getRandom().activity)}>
                   <span role="img" aria-label="no">
                     No 👎
                   </span>
                 </Button>
+              ) : (
+                <Button onClick={() => restart()}>Restart</Button>
               )}
               {loading ? <Loading /> : null}
             </Chat>
