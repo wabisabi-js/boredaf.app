@@ -9,6 +9,14 @@ export default [
     type: 'education'
   },
   {
+    activity: 'Learn Vue',
+    type: 'education'
+  },
+  {
+    activity: 'Learn React',
+    type: 'education'
+  },
+  {
     activity: 'Learn how to play a new sport',
     type: 'recreational'
   },
@@ -94,7 +102,7 @@ export default [
     type: 'social'
   },
   {
-    activity: 'Go on a long drive with no music',
+    activity: 'Go on a long drive',
     type: 'relaxation'
   },
   {
