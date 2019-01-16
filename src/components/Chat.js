@@ -48,14 +48,14 @@ const DateWrapper = styled.span`
 
 const Chat = ({ children, messages }) => (
   <Fragment>
-    {messages.map(({ user, bot }, i) => (
+    {messages.map(({ user, bot, time }, i) => (
       <Fragment key={i}>
         <UserSpeaking>
           <Bubble>{user}</Bubble>
-          <DateWrapper>{format(new Date(), 'HH:mm')}</DateWrapper>
+          <DateWrapper>{time}</DateWrapper>
         </UserSpeaking>
         <BotSpeaking>
-          <DateWrapper>{format(new Date(), 'HH:mm')}</DateWrapper>
+          <DateWrapper>{time}</DateWrapper>
           <Bubble primary>{bot}</Bubble>
           <SVG>
             <BotSVG />
