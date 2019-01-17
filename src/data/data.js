@@ -1,5 +1,23 @@
 export default [
   {
+    activity: 'Know more about Web Accessibility',
+    type: 'education',
+    link: 'https://medium.freecodecamp.org/pragmatic-rules-of-web-accessibility-that-will-stick-to-your-mind-9d3eb85a1a28'
+  },
+  {
+    activity: 'Do you first open source contribution',
+    type: 'education',
+    link: 'https://medium.freecodecamp.org/how-to-make-your-first-open-source-contribution-in-just-5-minutes-aaad1fc59c9a'
+  },
+  {
+    activity: 'Clean up your PC or Phone',
+    type: 'recreational',
+  },
+  {
+    activity: 'Clean up your inbox',
+    type: 'recreational',
+  },
+  {
     activity: 'Learn Express.js',
     type: 'education',
     link: 'https://expressjs.com/'
