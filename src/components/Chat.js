@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import BotSVG from './Bot'
-import { format } from 'date-fns'
+import { SrOnly } from './Elements'
 
 const Bubble = styled.div`
   min-height: 20px;
@@ -19,14 +19,15 @@ const ButtonsContainer = styled.div`
   display: flex;
   flex-flow: wrap;
 `
-const BotSpeaking = styled.div`
+const BotSpeaking = styled.li`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-direction: row-reverse;
   width: 100%;
 `
 
-const UserSpeaking = styled.div`
+const UserSpeaking = styled.li`
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -46,26 +47,37 @@ const DateWrapper = styled.span`
   margin: 0 25px;
 `
 
-const Chat = ({ children, messages }) => (
-  <Fragment>
-    {messages.map(({ user, bot }, i) => (
-      <Fragment key={i}>
-        <UserSpeaking>
-          <Bubble>{user}</Bubble>
-          <DateWrapper>{format(new Date(), 'HH:mm')}</DateWrapper>
-        </UserSpeaking>
-        <BotSpeaking>
-          <DateWrapper>{format(new Date(), 'HH:mm')}</DateWrapper>
-          <Bubble primary>{bot}</Bubble>
-          <SVG>
-            <BotSVG />
-          </SVG>
-        </BotSpeaking>
-      </Fragment>
-    ))}
+const List = styled.ul`
+  padding-left: 0;
+  margin: 0;
+`
 
-    <ButtonsContainer>{children}</ButtonsContainer>
-  </Fragment>
-)
+const Chat = ({ children, messages }) => {
+  const ariaAttr = (i) => i === messages.length - 1 ? { 'aria-live': 'polite' } : {}
+
+  return (
+    <Fragment>
+      <List aria-label="Conversation messages">
+        {messages.map(({ user, bot, time }, i) => (
+          <Fragment key={i}>
+            <UserSpeaking>
+              <Bubble>{user}</Bubble>
+              <DateWrapper><SrOnly>Sent at</SrOnly> {time}</DateWrapper>
+            </UserSpeaking>
+            <BotSpeaking {...ariaAttr(i) }>
+              <SVG>
+                <BotSVG />
+              </SVG>
+              <Bubble primary>{bot}</Bubble>
+              <DateWrapper><SrOnly>Sent at</SrOnly> {time}</DateWrapper>
+            </BotSpeaking>
+          </Fragment>
+        ))}
+      </List>
+
+      <ButtonsContainer>{children}</ButtonsContainer>
+    </Fragment>
+  )
+}
 
 export default Chat

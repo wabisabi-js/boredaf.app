@@ -5,8 +5,9 @@ import { Button } from './components/Button'
 import Reward from 'react-rewards'
 import Loading from './components/Loading'
 import Welcome from './components/Welcome'
-import { Card, ChatContainer, Mobile, MobileBg } from './components/Elements'
+import { Card, ChatContainer, Mobile, MobileBg, SrOnly } from './components/Elements'
 import mobileBg from './images/mobile-bg.svg'
+import { format } from 'date-fns'
 
 export default () => {
   let reward
@@ -14,10 +15,12 @@ export default () => {
   const [done, setDone] = useState(false)
   const [loading, setLoading] = useState(false)
   const { getRandom } = useContext(BoredContext)
+  const newTime = () => ({ time: format(new Date(), 'HH:mm') })
   const defaultMessages = [
     {
       user: 'I am bored. Give me shit to do',
-      bot: getRandom().activity
+      bot: getRandom().activity,
+      ...newTime(),
     }
   ]
   const [messages, setMessages] = useState(defaultMessages)
@@ -30,7 +33,8 @@ export default () => {
         ...messages,
         {
           user: 'No 👎',
-          bot: message
+          bot: message,
+          ...newTime(),
         }
       ])
       mobilePhone.current.scrollTop = mobilePhone.current.scrollHeight
@@ -43,7 +47,8 @@ export default () => {
       ...messages,
       {
         user: 'Yes 👍',
-        bot: 'Go do the Thing 🎉'
+        bot: 'Go do the Thing 🎉',
+        ...newTime(),
       }
     ])
     setDone(true)
@@ -64,6 +69,7 @@ export default () => {
       <Card>
         <Welcome />
         <ChatContainer>
+          <SrOnly as="h2">Chat</SrOnly>
           <MobileBg alt="background" src={mobileBg} />
           <Mobile ref={mobilePhone}>
             <Chat messages={messages}>
@@ -77,7 +83,7 @@ export default () => {
                   {done ? (
                     'Amazing'
                   ) : (
-                    <span role="img" aria-label="Yes">
+                    <span role="img" aria-label="Yes.">
                       Yes 👍
                     </span>
                   )}
@@ -85,7 +91,7 @@ export default () => {
               </Reward>
               {!done ? (
                 <Button onClick={() => no(getRandom().activity)}>
-                  <span role="img" aria-label="no">
+                  <span role="img" aria-label="No.">
                     No 👎
                   </span>
                 </Button>
