@@ -44,6 +44,7 @@ export const Mobile = styled.div`
   max-width: 375px;
   height: 500px;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 50px 20px 20px;
   background: #fff;
   border-radius: 50px;
