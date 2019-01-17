@@ -22,7 +22,6 @@ const ButtonsContainer = styled.div`
 const BotSpeaking = styled.li`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   flex-direction: row-reverse;
   width: 100%;
 `
@@ -53,7 +52,8 @@ const List = styled.ul`
 `
 
 const Chat = ({ children, messages }) => {
-  const ariaAttr = (i) => i === messages.length - 1 ? { 'aria-live': 'polite' } : {}
+  const ariaAttr = i =>
+    i === messages.length - 1 ? { 'aria-live': 'polite' } : {}
 
   return (
     <Fragment>
@@ -62,14 +62,18 @@ const Chat = ({ children, messages }) => {
           <Fragment key={i}>
             <UserSpeaking>
               <Bubble>{user}</Bubble>
-              <DateWrapper><SrOnly>Sent at</SrOnly> {time}</DateWrapper>
+              <DateWrapper>
+                <SrOnly>Sent at</SrOnly> {time}
+              </DateWrapper>
             </UserSpeaking>
-            <BotSpeaking {...ariaAttr(i) }>
+            <BotSpeaking {...ariaAttr(i)}>
               <SVG>
                 <BotSVG />
               </SVG>
               <Bubble primary>{bot}</Bubble>
-              <DateWrapper><SrOnly>Sent at</SrOnly> {time}</DateWrapper>
+              <DateWrapper>
+                <SrOnly>Sent at</SrOnly> {time}
+              </DateWrapper>
             </BotSpeaking>
           </Fragment>
         ))}

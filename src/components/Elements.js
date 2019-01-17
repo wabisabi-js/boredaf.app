@@ -98,7 +98,6 @@ export const ButtonsContainer = styled.div`
 export const BotSpeaking = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   width: 100%;
 `
 
@@ -119,6 +118,6 @@ export const SrOnly = styled.div`
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 `

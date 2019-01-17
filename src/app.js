@@ -5,7 +5,13 @@ import { Button } from './components/Button'
 import Reward from 'react-rewards'
 import Loading from './components/Loading'
 import Welcome from './components/Welcome'
-import { Card, ChatContainer, Mobile, MobileBg, SrOnly } from './components/Elements'
+import {
+  Card,
+  ChatContainer,
+  Mobile,
+  MobileBg,
+  SrOnly
+} from './components/Elements'
 import mobileBg from './images/mobile-bg.svg'
 import { format } from 'date-fns'
 
@@ -20,12 +26,12 @@ export default () => {
     {
       user: 'I am bored. Give me shit to do',
       bot: getRandom().activity,
-      ...newTime(),
+      ...newTime()
     }
   ]
   const [messages, setMessages] = useState(defaultMessages)
 
-  const no = message => {
+  const no = () => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
@@ -33,8 +39,8 @@ export default () => {
         ...messages,
         {
           user: 'No 👎',
-          bot: message,
-          ...newTime(),
+          bot: getRandom().activity,
+          ...newTime()
         }
       ])
       mobilePhone.current.scrollTop = mobilePhone.current.scrollHeight
@@ -48,7 +54,7 @@ export default () => {
       {
         user: 'Yes 👍',
         bot: 'Go do the Thing 🎉',
-        ...newTime(),
+        ...newTime()
       }
     ])
     setDone(true)
@@ -90,7 +96,7 @@ export default () => {
                 </Button>
               </Reward>
               {!done ? (
-                <Button onClick={() => no(getRandom().activity)}>
+                <Button onClick={() => no()}>
                   <span role="img" aria-label="No.">
                     No 👎
                   </span>
