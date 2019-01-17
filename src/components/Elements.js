@@ -14,11 +14,13 @@ export const Card = styled.div`
 
   @media only screen and (max-width: 900px) {
     flex-direction: column;
+    padding: 20px;
     margin: 20px;
   }
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
+    padding: 10px;
     margin: 10px;
   }
 `
@@ -50,6 +52,7 @@ export const Mobile = styled.div`
   box-shadow: 0 32px 44px 0 rgba(64, 68, 90, 0.2);
 
   @media only screen and (max-width: 900px) {
+    padding-top: 30px;
     margin: auto;
   }
 `
@@ -63,11 +66,14 @@ export const MobileBg = styled.img`
   transform: translateX(-25%);
 
   @media only screen and (max-width: 900px) {
-    transform: translateX(0%);
-    width: 100%;
+    left: 50%;
+    width: auto;
+    max-height: 500px;
+    transform: translateX(-50%);
   }
 
   @media only screen and (max-width: 600px) {
+    left: 0;
     transform: translateX(-10%);
     width: 120%;
   }
