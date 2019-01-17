@@ -5,7 +5,7 @@ import { Button } from './components/Button'
 import Reward from 'react-rewards'
 import Loading from './components/Loading'
 import Welcome from './components/Welcome'
-import { Card, ChatContainer, Mobile, MobileBg } from './components/Elements'
+import { Card, ChatContainer, Mobile, MobileBg, SrOnly } from './components/Elements'
 import mobileBg from './images/mobile-bg.svg'
 import { format } from 'date-fns'
 
@@ -69,6 +69,7 @@ export default () => {
       <Card>
         <Welcome />
         <ChatContainer>
+          <SrOnly as="h2">Chat</SrOnly>
           <MobileBg alt="background" src={mobileBg} />
           <Mobile ref={mobilePhone}>
             <Chat messages={messages}>
@@ -82,7 +83,7 @@ export default () => {
                   {done ? (
                     'Amazing'
                   ) : (
-                    <span role="img" aria-label="Yes">
+                    <span role="img" aria-label="Yes.">
                       Yes 👍
                     </span>
                   )}
@@ -90,7 +91,7 @@ export default () => {
               </Reward>
               {!done ? (
                 <Button onClick={() => no(getRandom().activity)}>
-                  <span role="img" aria-label="no">
+                  <span role="img" aria-label="No.">
                     No 👎
                   </span>
                 </Button>

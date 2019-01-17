@@ -4,13 +4,11 @@ import { WelcomeCard } from './Elements'
 const Welcome = () => (
   <WelcomeCard>
     <div>
-      <h2>Hello stranger!</h2>
-      <h1>So you think you bored!</h1>
+      <h1>Hello stranger!</h1>
+      <h2>So you think you bored!</h2>
       <p>Our chatbot can tell you a cool thing to do. Just give it a try!</p>
     </div>
     <div>
-      <br />
-      <br />
       <p>
         Made by{' '}
         <a

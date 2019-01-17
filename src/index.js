@@ -15,13 +15,14 @@ const Global = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    h2 {
+    h1 {
       color: #E45471;
       font-size: 30px;
       margin: 0;
       line-height: 1.5;
     }
-    h1 {
+
+    h2 {
       color: #41495D;
       line-height: 1.5;
       font-size:28px;
@@ -32,6 +33,11 @@ const Global = createGlobalStyle`
       color: #889097;
       line-height: 1.5;
       margin: 0;
+    }
+
+    a:hover, a:focus {
+      color: #222;
+      outline: none;
     }
   }
 
