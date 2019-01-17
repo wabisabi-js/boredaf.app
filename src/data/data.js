@@ -390,5 +390,16 @@ export default [
   { activity: 'Drink Mezcal' },
   { activity: 'Brew your own kombucha' },
   { activity: 'Invite a stranger that you see often out for a coffee' },
-  { activity: 'Call Mom' }
+  { activity: 'Call Mom' },
+  { activity: 'Re-organise your library' },
+  { activity: 'Clean out the refrigerator' },
+  { activity: 'Clean up your wardrobe' },
+  {
+    activity:
+      'Leave the house and walk without a destination in mind for 15 minutes and decide where to go on crossroads'
+  },
+  { activity: 'Learn five colours in French' },
+  { activity: 'Put on moisturiser' },
+  { activity: 'Do a plank' },
+  { activity: 'Do 10 squads' }
 ]
