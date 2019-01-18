@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useState, useRef } from 'react'
+import React, { Fragment, useContext, useEffect, useState, useRef } from 'react'
 import { BoredContext } from './BoredContext'
 import Chat from './components/Chat'
 import { Button } from './components/Button'
@@ -48,7 +48,9 @@ export default () => {
   }
 
   const yes = () => {
-    reward.rewardMe()
+    // reward is undefined when the 'y' key is pressed.
+    // haven't been able to figure a way around this yet :(
+    reward && reward.rewardMe()
     setMessages([
       ...messages,
       {
@@ -70,6 +72,9 @@ export default () => {
     setDone(false)
   }
 
+  const yPressed = useKeyPress('y')
+  const nPressed = useKeyPress('n')
+
   return (
     <Fragment>
       <Card>
@@ -83,9 +88,11 @@ export default () => {
                 type="confetti"
                 ref={ref => {
                   reward = ref
+                  console.log(reward)
                 }}
               >
                 <Button onClick={() => (done ? confetti() : yes())}>
+                  {yPressed && !done && yes()}
                   {done ? (
                     'Amazing'
                   ) : (
@@ -97,6 +104,7 @@ export default () => {
               </Reward>
               {!done ? (
                 <Button onClick={() => no()}>
+                  {nPressed && !loading && no()}
                   <span role="img" aria-label="No.">
                     No 👎
                   </span>
@@ -111,4 +119,23 @@ export default () => {
       </Card>
     </Fragment>
   )
+}
+
+const useKeyPress = (inputKey) => {
+  const [keyPressed, setKeyPressed] = useState(false)
+  const downHandle = ({ key }) => key === inputKey && setKeyPressed(true)
+  const upHandle = ({ key }) => key === inputKey && setKeyPressed(false)
+
+  useEffect(() => {
+    // add event listeners
+    window.addEventListener('keydown', downHandle)
+    window.addEventListener('keyup', upHandle)
+    // remove event listeners on cleanup
+    return () => {
+      window.removeEventListener('keydown', downHandle)
+      window.removeEventListener('keyup', upHandle)
+    }
+  }, [])
+
+  return keyPressed
 }
