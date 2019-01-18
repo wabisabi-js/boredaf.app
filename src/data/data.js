@@ -394,7 +394,7 @@ export default [
   { activity: 'Brew your own kombucha' },
   { activity: 'Invite a stranger that you see often out for a coffee' },
   { activity: 'Call Mom' },
-  { activity: 'Re-organise your library' },
+  { activity: 'Re-organize your library' },
   { activity: 'Clean out the refrigerator' },
   { activity: 'Clean up your wardrobe' },
   {
@@ -402,7 +402,25 @@ export default [
       'Leave the house and walk without a destination in mind for 15 minutes and decide where to go on crossroads'
   },
   { activity: 'Learn five colours in French' },
-  { activity: 'Put on moisturiser' },
+  { activity: 'Put on moisturizer' },
   { activity: 'Do a plank' },
-  { activity: 'Do 10 squads' }
+  { activity: 'Do 10 squads' },
+  { activity: "Revisit Your New Year's Resolutions" },
+  { activity: 'Make a smoothie' },
+  { activity: 'Grab some boba with friends!' },
+  { activity: 'Sing a Song' },
+  {
+    activity: 'Take a bus till the last stop and then explore that neighborhood'
+  },
+  { activity: 'Go outside and mark your territory' },
+  { activity: 'Clean your room' },
+  { activity: 'Yoga' },
+  { activity: 'Draw something!' },
+  { activity: 'When will you code' },
+  { activity: 'Play Zelda' },
+  { activity: 'Play Chess' },
+  { activity: 'Go for a swim' },
+  { activity: 'Do some writing' },
+  { activity: 'Leave Facebook' },
+  { activity: "Make a plan to surprise a friend with something they'd like" }
 ]
