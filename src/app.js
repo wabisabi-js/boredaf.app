@@ -88,7 +88,6 @@ export default () => {
                 type="confetti"
                 ref={ref => {
                   reward = ref
-                  console.log(reward)
                 }}
               >
                 <Button onClick={() => (done ? confetti() : yes())}>
