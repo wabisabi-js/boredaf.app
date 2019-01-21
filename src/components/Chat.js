@@ -7,10 +7,10 @@ const Bubble = styled.div`
   min-height: 20px;
   max-width: 200px;
   padding: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 8px;
   align-self: ${props => (props.primary ? 'flex-end' : 'flex-start')};
-  background: ${props => (props.primary ? '#4153B8' : 'white')}
-  color: ${props => (props.primary ? 'white' : '#54556C')}
+  background: ${props => (props.primary ? '#4153B8' : 'white')};
+  color: ${props => (props.primary ? 'white' : '#54556C')};
   border-radius: 20px;
   box-shadow: 0 2px 4px 0 rgba(210, 210, 210, 0.5);
 `
@@ -18,32 +18,30 @@ const Bubble = styled.div`
 const ButtonsContainer = styled.div`
   display: flex;
   flex-flow: wrap;
-`
-const BotSpeaking = styled.li`
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  width: 100%;
+  justify-content: flex-end;
 `
 
-const UserSpeaking = styled.li`
+const Speaking = styled.li`
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: ${props => (props.justifyEnd ? 'flex-start' : 'flex-end')};
   width: 100%;
 `
 
 const SVG = styled.div`
-  transform: translateY(50%);
-  margin-left: 7px;
+  display: flex;
+  margin-right: 7px;
 `
 
-const DateWrapper = styled.span`
-  font-size: 16px;
+const BubbleWrapper = styled.div``
+
+const DateWrapper = styled.div`
+  font-size: 14px;
   color: #aeb8c0;
-  align-self: flex-end;
-  transform: translateY(-100%);
-  margin: 0 25px;
+  margin-bottom: 16px;
+  padding: 0 4px;
+  text-align: ${props => (props.textRight ? 'right' : 'left')};
 `
 
 const List = styled.ul`
@@ -60,21 +58,25 @@ const Chat = ({ children, messages }) => {
       <List aria-label="Conversation messages">
         {messages.map(({ user, bot, time }, i) => (
           <Fragment key={i}>
-            <UserSpeaking>
-              <Bubble>{user}</Bubble>
-              <DateWrapper>
-                <SrOnly>Sent at</SrOnly> {time}
-              </DateWrapper>
-            </UserSpeaking>
-            <BotSpeaking {...ariaAttr(i)}>
+            <Speaking>
+              <BubbleWrapper>
+                <Bubble>{user}</Bubble>
+                <DateWrapper textRight>
+                  <SrOnly>Sent at</SrOnly> {time}
+                </DateWrapper>
+              </BubbleWrapper>
+            </Speaking>
+            <Speaking {...ariaAttr(i)} justifyEnd>
               <SVG>
                 <BotSVG />
               </SVG>
-              <Bubble primary>{bot}</Bubble>
-              <DateWrapper>
-                <SrOnly>Sent at</SrOnly> {time}
-              </DateWrapper>
-            </BotSpeaking>
+              <BubbleWrapper>
+                <Bubble primary>{bot}</Bubble>
+                <DateWrapper>
+                  <SrOnly>Sent at</SrOnly> {time}
+                </DateWrapper>
+              </BubbleWrapper>
+            </Speaking>
           </Fragment>
         ))}
       </List>
