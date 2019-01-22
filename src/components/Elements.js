@@ -80,26 +80,9 @@ export const MobileBg = styled.img`
   }
 `
 
-export const Bubble = styled.div`
-  min-height: 50px;
-  max-width: 200px;
-  padding: 1em;
-  margin-bottom: 1em;
-  align-self: ${props => (props.primary ? 'flex-end' : 'flex-start')};
-  background: ${props => (props.primary ? '#0b9af5' : 'white')}
-  color: ${props => (props.primary ? 'white' : '#54556C')}
-  border-radius: 20px;
-  box-shadow: 0 2px 4px 0 rgba(210, 210, 210, 0.5);
-`
-
 export const ButtonsContainer = styled.div`
   display: flex;
   flex-flow: wrap;
-`
-export const BotSpeaking = styled.div`
-  display: flex;
-  align-items: center;
-  width: 100%;
 `
 
 export const ChatContainer = styled.div`
