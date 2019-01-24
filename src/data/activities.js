@@ -7,6 +7,7 @@ export default [
   'Learn to greet someone in a new language',
   'Learn Vue',
   'Learn React',
+  'Drink a beer',
   'Learn how to play a new sport',
   "Text a friend you haven't talked to in a long time",
   'Learn a new programming language',

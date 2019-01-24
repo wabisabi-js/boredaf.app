@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { DialogOverlay, DialogContent } from '@reach/dialog'
 
 export const Card = styled.div`
   display: flex;
@@ -105,4 +106,73 @@ export const SrOnly = styled.div`
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+`
+
+export const Overlay = styled(DialogOverlay)`
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+`
+
+export const Button = styled.button`
+  color: #889097;
+  line-height: 1.5;
+  margin: 0;
+  border: none;
+  appearance: none;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #222;
+    outline: none;
+  }
+`
+
+export const Input = styled.input`
+  padding: 10px;
+  width: 80%;
+  margin: 20px 0;
+  display: block;
+  box-shadow: 0px 0px 0px 2px rgba(65, 83, 184, 0.7);
+  border: none;
+  transition: all 200ms ease;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 2px rgba(65, 83, 184, 0.7);
+  }
+
+  ::-webkit-input-placeholder {
+    color: rgba(136, 144, 151, 0.7);
+    font-style: italic;
+  }
+  ::-moz-placeholder {
+    color: rgba(136, 144, 151, 0.7);
+    font-style: italic;
+  }
+  :-ms-input-placeholder {
+    color: rgba(136, 144, 151, 0.7);
+    font-style: italic;
+  }
+`
+
+export const SubmitButton = styled.button`
+  padding: 10px 14px;
+  color: white;
+  background: rgba(65, 83, 184, 1);
+  border: none;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+`
+
+export const ModalContent = styled(DialogContent)`
+  border-radius: 5px;
+  @media only screen and (max-width: 600px) {
+    width: 80vw;
+  }
 `

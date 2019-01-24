@@ -1,0 +1,4 @@
+[build]
+  Command = "npm run build && npm run build:lambda && cp _redirects build/_redirects"
+  Functions = "lambda"
+  Publish = "build"
