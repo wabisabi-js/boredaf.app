@@ -459,5 +459,16 @@ export default [
   { activity: 'Take up drawing' },
   { activity: 'Cook yourself a fast meal.' },
   { activity: 'Painting' },
-  { activity: 'Run up and down the stairs 10 times' }
+  { activity: 'Run up and down the stairs 10 times' },
+  { activity: 'Do Rock Climbing' },
+  { activity: 'Compliment yourself' },
+  {
+    activity: 'Write a letter (to a relative, to an old friend)'
+  },
+  { activity: 'Wrangle horses' },
+  { activity: 'Do 10 push-ups ' },
+  { activity: 'Make a paper airplane and throw it at someone ' },
+  { activity: 'Do speed math' },
+  { activity: 'Fill an A4 paper with circles' },
+  { activity: 'Add an activity to this app' }
 ]
