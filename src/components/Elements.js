@@ -41,6 +41,7 @@ export const WelcomeCard = styled.div`
 `
 
 export const Mobile = styled.div`
+  min-width: 320px;
   max-width: 375px;
   height: 500px;
   overflow: auto;

@@ -25,7 +25,7 @@ export default () => {
   const defaultMessages = [
     {
       user: 'I am bored. Give me shit to do',
-      bot: getRandom().activity,
+      bot: getRandom(),
       ...newTime()
     }
   ]
@@ -39,7 +39,7 @@ export default () => {
         ...messages,
         {
           user: 'No 👎',
-          bot: getRandom().activity,
+          bot: getRandom(),
           ...newTime()
         }
       ])
@@ -120,7 +120,7 @@ export default () => {
   )
 }
 
-const useKeyPress = (inputKey) => {
+const useKeyPress = inputKey => {
   const [keyPressed, setKeyPressed] = useState(false)
   const downHandle = ({ key }) => key === inputKey && setKeyPressed(true)
   const upHandle = ({ key }) => key === inputKey && setKeyPressed(false)

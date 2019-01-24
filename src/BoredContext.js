@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import data from './data/data'
+import data from './data/activities'
 
 export const BoredContext = React.createContext()
 
