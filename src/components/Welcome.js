@@ -41,6 +41,24 @@ const Welcome = () => {
           </a>
         </p>
         <p>
+          Use the{' '}
+          <a
+            href="https://t.me/Bored_AF_Bot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Telegram Bot (by{' '}
+            <a
+              href="https://twitter.com/uur_oruc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Uğur Oruç
+            </a>
+            )
+          </a>
+        </p>
+        <p>
           <Button
             href="#"
             onClick={() => setModalOpen(true)}
