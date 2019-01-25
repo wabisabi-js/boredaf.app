@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom'
 import { BoredState } from './BoredContext'
 import { createGlobalStyle } from 'styled-components'
 import normalize from 'normalize.css'
+import reach from '@reach/dialog/styles.css'
 import Main from './app'
 import * as serviceWorker from './serviceWorker'
 
 const Global = createGlobalStyle`
   ${normalize}
+  ${reach}
   @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
   body {
     font-family: 'Nunito Sans', sans-serif;

@@ -34,8 +34,8 @@ const LoadingSpinner = styled.div`
     animation-delay: -0.16s;
   }
 `
-const Loading = () => (
-  <LoadingSpinner>
+const Loading = ({ style }) => (
+  <LoadingSpinner style={style}>
     <div className="bounce1" />
     <div className="bounce2" />
     <div className="bounce3" />
