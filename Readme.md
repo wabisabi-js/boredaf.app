@@ -1,19 +1,11 @@
-# bored.inc
+# Boredaf.app
 
-[![Build Status](https://travis-ci.org/SaraVieira/bored.inc.svg)](https://travis-ci.org/SaraVieira/bored.inc)
 
-...
+An app that tells you random things to do when you are bored
 
-## Change log
+https://boredaf.app
 
-The change log can be found on the [Releases page](https://github.com/SaraVieira/bored.inc/releases).
+## Telegram Bot
+https://t.me/Bored_AF_Bot
 
-## Contributing
-
-Everyone is welcome to contribute. Please take a moment to review the [contributing guidelines](Contributing.md).
-
-## Authors and license
-
-[SaraVieira](https://iamsaravieira.com) and [contributors](https://github.com/SaraVieira/bored.inc/graphs/contributors).
-
-MIT License, see the included [License.md](License.md) file.
+https://github.com/Ketcap/boredaf.app.bot
