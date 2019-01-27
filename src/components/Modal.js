@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { Spring } from 'react-spring'
+import { Transition } from 'react-spring'
 import Reward from 'react-rewards'
 import Loading from './Loading'
 import { Overlay, Input, SubmitButton, ModalContent } from './Elements'
@@ -29,9 +29,14 @@ const Modal = ({ open, close }) => {
   }
 
   return (
-    open && (
-      <Spring from={{ opacity: 0, y: -60 }} to={{ opacity: 1, y: 0 }}>
-        {styles => (
+    <Transition
+      items={open}
+      from={{ opacity: 0, y: -60 }}
+      enter={{ opacity: 1, y: 0 }}
+      leave={{ opacity: 0, y: -60 }}
+    >
+      {open => styles =>
+        open && (
           <Overlay
             style={{ opacity: styles.opacity }}
             onDismiss={() => {
@@ -66,8 +71,7 @@ const Modal = ({ open, close }) => {
             </ModalContent>
           </Overlay>
         )}
-      </Spring>
-    )
+    </Transition>
   )
 }
 
