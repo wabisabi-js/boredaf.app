@@ -31,9 +31,9 @@ const Modal = ({ open, close }) => {
   return (
     <Transition
       items={open}
-      from={{ opacity: 0, y: -60 }}
+      from={{ opacity: 0, y: 200 }}
       enter={{ opacity: 1, y: 0 }}
-      leave={{ opacity: 0, y: -60 }}
+      leave={{ opacity: 0, y: -200 }}
     >
       {open => styles =>
         open && (
@@ -46,7 +46,7 @@ const Modal = ({ open, close }) => {
           >
             <ModalContent
               style={{
-                transform: `translate3d(0px, ${styles.y}px, 0px)`
+                transform: `translate3d(0px, ${styles.y}px, 0px)`,
               }}
             >
               <h1>Add an awesome activity</h1>

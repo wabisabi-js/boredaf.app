@@ -59,14 +59,7 @@ const Welcome = () => {
           </a>
         </p>
         <p>
-          <Button
-            href="#"
-            onClick={() => setModalOpen(true)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Add an Activity
-          </Button>
+          <Button onClick={() => setModalOpen(true)}>Add an Activity</Button>
         </p>
       </div>
       <Modal open={modalOpen} close={() => setModalOpen(false)} />

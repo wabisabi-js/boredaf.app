@@ -17,7 +17,7 @@ exports.handler = function(e, context, callback) {
 
     callback(null, {
       statusCode: 200,
-      body: JSON.stringify({ id: record.getId(), status: 'created' })
+      body: JSON.stringify({ id: record.getId(), status: 'created' }),
     })
   })
 }

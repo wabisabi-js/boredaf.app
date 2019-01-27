@@ -223,5 +223,9 @@ export default [
   'Make a paper airplane and throw it at someone ',
   'Do speed math',
   'Fill an A4 paper with circles',
-  'Add an activity to this app'
+  'Add an activity to this app',
+  "Try to solve a Rubik's Cube!",
+  'Learn to Moon Walk',
+  'Go to play basketball',
+  'Go fishing',
 ]
