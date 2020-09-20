@@ -56,7 +56,7 @@ const Chat = ({ children, messages }) => {
   return (
     <Fragment>
       <List aria-label="Conversation messages">
-        {messages.map(({ user, bot, time }, i) => (
+        {messages.map(({ user, botMessage, botLink, time }, i) => (
           <Fragment key={i}>
             <Speaking>
               <BubbleWrapper>
@@ -71,7 +71,15 @@ const Chat = ({ children, messages }) => {
                 <BotSVG />
               </SVG>
               <BubbleWrapper>
-                <Bubble primary>{bot}</Bubble>
+                <Bubble primary>
+                  {botLink ? (
+                    <a href={botLink} style={{ color: 'white' }}>
+                      {botMessage}
+                    </a>
+                  ) : (
+                    botMessage
+                  )}
+                </Bubble>
                 <DateWrapper>
                   <SrOnly>Sent at</SrOnly> {time}
                 </DateWrapper>

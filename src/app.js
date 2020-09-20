@@ -10,7 +10,7 @@ import {
   ChatContainer,
   Mobile,
   MobileBg,
-  SrOnly,
+  SrOnly
 } from './components/Elements'
 import mobileBg from './images/mobile-bg.svg'
 import { format } from 'date-fns'
@@ -20,14 +20,14 @@ export default () => {
   const mobilePhone = useRef(null)
   const [done, setDone] = useState(false)
   const [loading, setLoading] = useState(false)
-  const { getRandom } = useContext(BoredContext)
+  const { getActivity, getLink } = useContext(BoredContext)
   const newTime = () => ({ time: format(new Date(), 'HH:mm') })
   const defaultMessages = [
     {
       user: 'I am bored. Give me shit to do',
-      bot: getRandom(),
-      ...newTime(),
-    },
+      botMessage: getActivity(),
+      ...newTime()
+    }
   ]
   const [messages, setMessages] = useState(defaultMessages)
 
@@ -39,9 +39,9 @@ export default () => {
         ...messages,
         {
           user: 'No 👎',
-          bot: getRandom(),
-          ...newTime(),
-        },
+          botMessage: getActivity(),
+          ...newTime()
+        }
       ])
       mobilePhone.current.scrollTop = mobilePhone.current.scrollHeight
     }, 400)
@@ -55,9 +55,10 @@ export default () => {
       ...messages,
       {
         user: 'Yes 👍',
-        bot: 'Go do the Thing 🎉',
-        ...newTime(),
-      },
+        botMessage: 'Go do the Thing 🎉',
+        botLink: getLink(),
+        ...newTime()
+      }
     ])
     setDone(true)
     setTimeout(() => {
